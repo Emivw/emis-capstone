@@ -13,20 +13,20 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-<ul class="dflex flex-row gap-5">
+<ul class="dflex flex-column">
 <li>
-<router-link to="/" class="btn btn-outine-primary">Home</router-link>
+<router-link to="/" class="btn btn-outine-primary"><i class="fa fa-house" aria-hidden="true"></i> Home</router-link>
 </li>
 <li>
-    <router-link to="/about" class="btn btn-outine-primary">About</router-link>
+    <router-link to="/about" class="btn btn-outine-primary"><i class="fa fa-address-book" aria-hidden="true"></i> About</router-link>
 </li>
 <li>
-    <router-link to="/products" class="btn btn-outine-primary ">Products</router-link>
+    <router-link to="/products" class="btn btn-outine-primary "><i class="fa fa-briefcase" aria-hidden="true"></i> Products</router-link>
 </li>
-    <li t class="btn btn-outine-warning btn-warning"><router-link to="/login" >Login</router-link></li>
+    <li t class="btn btn-outine-warning "><router-link to="/login" >Login</router-link></li>
      
-     <li t class="btn btn-outine-primary btn-warning"><router-link to="/register">Register</router-link></li> 
-
+     <li t class="btn btn-outine-primary"><router-link to="/register">Register</router-link></li> 
+     
 </ul>
 
 
@@ -59,6 +59,8 @@ export default {
     }
     li{
         list-style: none;
+        text-decoration: none;
+        font-size: 4rem;
     }
 
 nav a {
