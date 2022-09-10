@@ -1,8 +1,8 @@
 <template>
     <nav class="fixed-top d-flex justify-content-evenly">
-        <button class="btn-grad" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
+        <button class="btn btn-outline-warning btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
             aria-controls="offcanvasLeft"><i class="fa fa-hamburger"></i> Navigation</button>
-        <button class="btn-grad" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        <button class="btn btn-outline-warning btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"> <i class="fa fa-shopping-cart"></i> cart</button>
 
     </nav>
@@ -13,24 +13,24 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-<ul>
+<ul class="dflex flex-row gap-5">
 <li>
-<router-link to="/" class="btn-grad">Home</router-link>
+<router-link to="/" class="btn btn-outine-primary">Home</router-link>
 </li>
 <li>
-    <router-link to="/about" class="btn-grad">About</router-link>
+    <router-link to="/about" class="btn btn-outine-primary">About</router-link>
 </li>
 <li>
-    <router-link to="/products" class="btn-grad">Products</router-link>
+    <router-link to="/products" class="btn btn-outine-primary ">Products</router-link>
 </li>
+    <li t class="btn btn-outine-warning btn-warning"><router-link to="/login" >Login</router-link></li>
+     
+     <li t class="btn btn-outine-primary btn-warning"><router-link to="/register">Register</router-link></li> 
 
 </ul>
- <li class=" d-flex flex-row justify-content-end">
 
-    <button type="button" class="btn-grad"><router-link to="/login" >Login</router-link></button>
-     
-     <button type="button" class="btn-grad"><router-link to="/register">Register</router-link></button> 
- </li>
+
+
 
             </div>
             </div>
