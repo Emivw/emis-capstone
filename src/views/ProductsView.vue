@@ -1,6 +1,19 @@
 <template>
     <div class="products-container">
-        <ProductCard  />
+    <div class="col-md-12 d-flex">
+        <h1 class="red">W</h1>
+<h1 class="yellow">A</h1>
+<h1 class="green">R</h1>
+<h1 class="blue">E</h1>
+<h1 class="red">S</h1>
+    </div>
+        <div v-if="products">
+        <div class="row">
+            <ProductCard v-for="product in products" :key="product.prodID" :product="product" />
+        </div>
+        </div>
+        <div v-else>
+            loading...</div>
     </div>
 </template>
 
@@ -21,4 +34,24 @@ export default {
 </script>
 
 <style scoped>
+    .products-container{
+        background: url('https://images.pexels.com/photos/1901028/pexels-photo-1901028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+        height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  overflow-x: hidden;
+    }
+    h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+
 </style>
