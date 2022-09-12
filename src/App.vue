@@ -5,13 +5,16 @@
   </nav> -->
   <NavBar/>
   <router-view/>
+  <FooterComp/>
 </template>
 <script>
 import NavBar from "./components/navBar.vue";
+import FooterComp from "./components/FooterComp.vue";
 export default {
   components: {
-    NavBar
-  }
+    NavBar,
+    FooterComp
+}
 }
 
 </script>
@@ -19,7 +22,7 @@ export default {
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 #app {
-  font-family: 'Rampart One', cursive;
+ font-family: 'Rampart One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

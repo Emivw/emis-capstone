@@ -1,5 +1,5 @@
 <template>
-<div class="product-container pt-5 mt-5">
+<div class="product-container py-5 mt-5">
 
 <div id="product" v-if="product" class="container">
 <div class="row">
@@ -47,8 +47,9 @@
 
 <style scoped>
     .product-container{
-        background: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        color: black;
+        background: url('https://raw.githubusercontent.com/claudz1/CodepenImages/master/plank.jpg');
+        background-size: cover;
+        color: white;
     }
 
 </style>

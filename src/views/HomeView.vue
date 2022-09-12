@@ -36,7 +36,7 @@ export default {
 </script>
 <style scoped>
   .landing-container{
-    /* background: url('https://images.pexels.com/photos/1901028/pexels-photo-1901028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    /* background: url('https://images.pexels.com/photos/331986/pexels-photo-331986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     /* width: 100vw; */
     height: 80vh;
   

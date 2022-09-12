@@ -1,11 +1,11 @@
 <template>
-    <div class="products-container">
+    <div class="products-container mt-5 pt-5">
     <div class="col-md-12 d-flex">
-        <h1 class="red">W</h1>
-<h1 class="yellow">A</h1>
+        <h1 class="red">M</h1>
+<h1 class="yellow">E</h1>
 <h1 class="green">R</h1>
-<h1 class="blue">E</h1>
-<h1 class="red">S</h1>
+<h1 class="blue">C</h1>
+<h1 class="red">H</h1>
     </div>
         <div v-if="products">
         <div class="row">
@@ -44,7 +44,7 @@ export default {
   overflow-x: hidden;
     }
     h1 {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: #ffffff;
   font-size: 5rem;
   font-weight: 700;
