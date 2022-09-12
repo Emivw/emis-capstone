@@ -23,16 +23,26 @@
 <li>
     <router-link to="/products" class="btn btn-outine-primary  btn-dark"><i class="fa fa-briefcase" aria-hidden="true"></i> Products</router-link>
 </li>
-<div class="dropdown open">
+<div class="dropdown open" v-if="user">
     <button class="btn btn-outline-warning btn-dark btn-sm dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <i class="fa fa-user">  </i>   Account
             </button>
     <div class="dropdown-menu" aria-labelledby="triggerId">
-        <router-link to="/login" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i> login</router-link>
-        <router-link to="/register" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i> register</router-link>
+        <router-link to="/login" class="dropdown-item"><i class="fa fa-exit" aria-hidden="true"></i> Logout</router-link>
+        <router-link to="/register" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i> Profile</router-link>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">After divider action</a>
+        <router-link to="/admin" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i>Admin</router-link>
+    </div>
+</div>
+<div class="dropdown open" v-else>
+    <button class="btn btn-outline-warning btn-dark btn-sm dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa fa-user">  </i>   Account
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <router-link to="/login" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i> Login</router-link>
+        <router-link to="/register" class="dropdown-item"><i class="fa fa-address-card" aria-hidden="true"></i> Register</router-link>
     </div>
 </div>
     <li  class="btn btn-outine-warning"></li>
@@ -59,9 +69,16 @@
 </template>
 
 <script>
-export default {
-
-}
+      export default {
+          computed: {
+    user() {
+      return this.$store.state.user;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("getUser");
+  },
+    }
 </script>
 
 <style scoped>
@@ -85,7 +102,9 @@ nav a {
 .navbar-scroll .navbar-toggler-icon {
   color: #fff;
 }
-
+nav{
+    padding: 10px;
+}
 /* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon {

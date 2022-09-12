@@ -1,5 +1,5 @@
 <template>
-.<div class="landing-container">
+<div class="landing-container">
   <div class="text-container">
   <span>N</span>
   <span>O</span>
@@ -48,7 +48,7 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  height: 100vh;
+  /* height: 100vh; */
   /* font-family: 'Quicksand', sans-serif; */
 }
 

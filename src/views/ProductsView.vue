@@ -1,5 +1,5 @@
 <template>
-    <div class="products-container mt-5 pt-5">
+    <div class="products-container pt-5">
     <div class="col-md-12 d-flex">
         <h1 class="red">M</h1>
 <h1 class="yellow">E</h1>

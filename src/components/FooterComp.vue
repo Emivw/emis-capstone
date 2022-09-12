@@ -12,7 +12,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="phone-no">
-                                <a href="tel:+12 34 56 78 90"><i class="fa fa-mobile" aria-hidden="true"></i>Call +12 34 56 78 90</a>
+                                <!-- <a href="tel:+12 34 56 78 90"><i class="fa fa-mobile" aria-hidden="true"></i>Call +12 34 56 78 90</a> -->
                             </div>
                         </div>
                     </div>

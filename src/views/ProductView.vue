@@ -1,5 +1,5 @@
 <template>
-<div class="product-container py-5 mt-5">
+<div class="product-container py-5">
 
 <div id="product" v-if="product" class="container">
 <div class="row">
