@@ -3,8 +3,8 @@
   <div class="contact-form-wrapper d-flex justify-content-center">
     <form   action="https://formspree.io/f/xrgjyewq"
   method="POST" class="contact-form bg-dark">
-      <h5 class="title">Contact us</h5>
-      <p class="description">Feel free to contact us if you need any assistance, any help or another question.
+      <h5 class="title text-warning">Contact us</h5>
+      <p class="description text-white">Feel free to contact us if you need any assistance, any help or another question.
       </p>
       <div>
         <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
