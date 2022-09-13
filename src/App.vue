@@ -29,7 +29,18 @@ export default {
   color: #2c3e50;
   overflow-x: hidden;
 }
-         
+h6 {
+  display: inline-block;
+  
+  /* font-family: 'Lato', sans-serif; */
+  color: #f55;
+  padding: 2px;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-shadow: 0px 0px 15px #f00, 0px 0px 12px #f00, 0px 0px 5px #f00;
+  border-radius: 40% 60%;
+  box-shadow: -1px -1px 1px #000,-2px -2px 1px #000,-3px -3px 4px #000, -5px -5px 1px #00f,-8px -8px 1px #55f, -9px -9px 12px #00f, 1px 1px 1px #000,2px 2px 1px #000, 3px 3px 4px #000, 5px 5px 1px #00f,8px 8px 1px #55f, 9px 9px 12px #00f;
+}
 .btn-grad {
             background-image: linear-gradient(to right, #1e130c 0%, #9a8478  51%, #1e130c  100%);
             margin: 10px;
