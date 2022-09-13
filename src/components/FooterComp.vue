@@ -70,7 +70,8 @@
                                 <router-link to="/products" class="btn btn-outine-primary  btn-dark"><i
                                         class="fa fa-briefcase" aria-hidden="true"></i> Products</router-link>
                             </li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li>                                <router-link to="/contact" class="btn btn-outine-primary  btn-dark"><i
+                                        class="fa fa-envelope" aria-hidden="true"></i> Contact Us</router-link></li>
                         </ul>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ export default {
 }
 
 .pollaroid-gallery {
-    background-image: url('https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://raw.githubusercontent.com/claudz1/CodepenImages/master/plank.jpg');
     height: 100%;
     background-size: cover;
 
