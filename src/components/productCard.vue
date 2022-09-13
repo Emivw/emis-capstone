@@ -1,5 +1,6 @@
 <template>
 <div class="content-wrapper">
+        <router-link :to="{ name: 'product', params: { id: product.prodID} }">
   <div class="news-card">
 
     <a href="#" class="news-card__card-link"></a>
@@ -9,12 +10,11 @@
       <div class="news-card__post-name"></div>
       <div class="news-card__details-wrapper">
         <p class="news-card__excerpt">R{{product.prodPrice}}</p>
-        <router-link :to="{ name: 'product', params: { id: product.prodID} }">
         <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </router-link>
       </div>
 </div>
     </div>
+            </router-link>
   </div>
 
 </template>
