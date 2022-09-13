@@ -10,7 +10,7 @@
   <span>Gents</span>
 </div>
 </div>
-  <Polaroid v-for="product in products" :key="product.prodID" :product="product" />
+  <Polaroid />
 </template>
 
 <script>
