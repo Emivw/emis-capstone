@@ -18,7 +18,10 @@
 <router-link to="/" class="btn btn-outine-primary btn-dark"><i class="fa fa-house" aria-hidden="true"></i> Home</router-link>
 </li>
 <li>
-    <router-link to="/about" class="btn btn-outine-primary btn-dark"><i class="fa fa-address-book" aria-hidden="true"></i> About</router-link>
+    <router-link to="/about" class="btn btn-outine-primary btn-dark"><i class="fa fa-address-book"></i> About</router-link>
+</li>
+<li>
+    <router-link to="/contact" class="btn btn-outine-primary  btn-dark"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</router-link>
 </li>
 <li>
     <router-link to="/products" class="btn btn-outine-primary  btn-dark"><i class="fa fa-briefcase" aria-hidden="true"></i> Products</router-link>
